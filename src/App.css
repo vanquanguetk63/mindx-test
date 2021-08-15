@@ -1,38 +1,57 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  font-family: "Merriweather", sans-serif;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #3f4254;
+  background-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table:not(.table-bordered) thead th,
+.table:not(.table-bordered) thead td {
+  border-top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.label.label-inline {
+  width: auto;
+  padding: 0.15rem 0.75rem;
+  border-radius: 0.42rem;
 }
 
-.App-link {
-  color: #61dafb;
+.label.label-light-primary {
+  color: #1bc5bd;
+  background-color: #c9f7f5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.label {
+  font-size: 0.8rem;
+}
+
+.card-footer {
+  margin-top: 10px;
+  padding: 1rem 0rem;
+  background-color: #ffffff;
+  border-top: 1px solid #ebedf3;
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 calc(0.42rem - 1px) calc(0.42rem - 1px);
+}
+
+.btn.btn-primary {
+  color: #ffffff;
+  background-color: #1bc5bd;
+  border-color: #1bc5bd;
+  cursor: pointer;
+}
+
+.btn.btn-secondary {
+  color: #3f4254;
+  background-color: #e4e6ef;
+  border-color: #e4e6ef;
+  cursor: pointer;
 }
